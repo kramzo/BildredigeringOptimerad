@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om mig</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/favicon.ico" sizes="16x16" />
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <img class="svamp-logo" src="images/logo-svamp.svg" alt="" />
+
+        <picture>
+          <source
+            srcset="
+              bilder-Webp/header/header-600w.webp   600w,
+              bilder-Webp/header/header-1200w.webp 1200w,
+              bilder-Webp/header/header-1800w.webp 1800w
+            "
+            type="image/webp"
+          />
+
+          <img class="header-image" src="images/header.png" alt="" />
+        </picture>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a href="om-mig.html" aria-current="page">Om mig</a></li>
+          <li><a href="bildredigering.html">Bildredigering</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article class="om-mig-container">
+        <h1>Om mig</h1>
+
+        <div class="om-mig-portratt">
+          <picture>
+            <source
+              srcset="
+                bilder-Webp/portrait/portrait3-600w.webp   600w,
+                bilder-Webp/portrait/portrait3-928w.webp   928w,
+                bilder-Webp/portrait/portrait3-1200w.webp 1200w
+              "
+              type="image/webp"
+            />
+            <img
+              class="om-mig-image"
+              src="images/portrait3.png"
+              alt="Porträtt av Kei"
+            />
+          </picture>
+
+          <img class="om-mig-sparkles" src="images/sparkles.png" alt="" />
+        </div>
+
+        <div class="om-mig-text">
+          <p>Var hälsad!</p>
+          <p>
+            Jag heter Kei och studerar webbutveckling på Mittuniversitetet. Jag
+            bor i Floby och tycker om att skapa, både digitalt och med händerna.
+            På fritiden tecknar jag gärna, pysslar och försvinner in i en bra
+            bok eller ett spel.
+          </p>
+          <p>
+            Skog, sagor och lite vardagsmagi är återkommande inspirationskällor
+            för mig. Det syns även här på webbplatsen, där jag har valt murriga
+            naturtoner, grönska och en och annan svamp. 🍄
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        Kei Alanenpää<br />
+        Webbutveckling, Mittuniversitetet<br />
+        Grafisk teknik för webb, DT200G
+      </p>
+    </footer>
+  </body>
+</html>

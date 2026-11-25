@@ -1,0 +1,298 @@
+/* GEMENSAMT */
+
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #1a2715;
+  margin: 0;
+  padding: 0;
+  color: #e6dda9;
+}
+
+header {
+  position: relative;
+}
+
+.header-content {
+  position: relative;
+}
+
+.header-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 60%;
+  border-radius: 0;
+}
+
+.svamp-logo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: auto;
+  opacity: 1;
+  z-index: 1;
+}
+
+nav {
+  border-block: 1px solid #424d2e;
+  background-color: #111a0e;
+}
+
+nav ul,
+nav li,
+nav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: #e6dda9;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  max-width: 64rem;
+  margin-inline: auto;
+  margin-top: 2rem;
+  padding-block-start: 2rem;
+  padding-inline: 2rem;
+}
+
+footer {
+  display: block;
+  width: auto;
+  height: 5rem;
+  background-color: #111a0e;
+  margin-top: 4rem;
+  padding-block: 1rem;
+  color: #608668;
+  border-block: 1px solid #424d2e;
+}
+
+/* OM MIG */
+
+.om-mig-portratt > picture > img {
+  position: relative;
+  width: min(100%, 20rem);
+  margin-inline: auto;
+}
+
+.om-mig-image > .om-mig-portratt > picture > img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.om-mig-sparkles {
+  position: absolute;
+  top: -1rem;
+  left: 2.4rem;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.om-mig-text {
+  background-color: #111a0e;
+  border: 1px solid #e6dda9;
+  margin: 1rem;
+  padding: 1.5rem;
+}
+
+/* STARTSIDAN OCH BILDREDIGERING */
+
+.redigerade-bilder {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  background-color: #111a0e;
+  border: 1px solid #e6dda9;
+  padding: 0.5rem;
+  max-width: 42rem;
+  margin: 0;
+  position: relative;
+}
+
+.redigerade-bilder > hr {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #e6dda9;
+}
+
+.redigerade-bilder > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.redigerade-bilder,
+h2,
+p {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.redigerade-bilder > div > h3 {
+  margin: 0;
+}
+
+.redigerade-bilder > div > h3,
+.redigerade-bilder > div > p {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding-inline: 1rem;
+}
+
+.redigerade-bilder img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* STARTSIDANS GALLERI */
+
+.redigerade-bilder > .startsida-galleri {
+  grid-template-columns: minmax(0, 16fr) minmax(0, 9fr);
+  align-items: center;
+}
+
+.startsida-galleri > picture:last-child {
+  grid-column: 1 / -1;
+}
+
+.startsida-galleri > picture {
+  display: block;
+  min-width: 0;
+}
+
+.startsida-galleri > picture > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* HÖRNSTJÄRNOR */
+
+.redigerade-bilder > .sparkles-corner,
+.redigerade-bilder > .sparkles-corner-2 {
+  position: absolute;
+  width: 6rem;
+  height: auto;
+  pointer-events: none;
+}
+
+.redigerade-bilder > .sparkles-corner {
+  top: -2.5rem;
+  left: -2.3rem;
+}
+
+.redigerade-bilder > .sparkles-corner-2 {
+  bottom: -2.5rem;
+  right: -2.3em;
+  transform: rotate(180deg);
+}
+
+/* BREDA SKÄRMAR */
+
+@media screen and (min-width: 64rem) {
+  .header-image {
+    height: 18rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .svamp-logo {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+  }
+
+  .om-mig-container {
+    display: grid;
+    grid-template-columns: 20rem minmax(0, 1fr);
+    align-items: center;
+    max-width: 52rem;
+    margin-inline: auto;
+  }
+
+  .om-mig-container > h1 {
+    grid-column: 1 / -1;
+    margin: 0 0 2rem;
+    text-align: center;
+  }
+
+  .om-mig-portratt {
+    z-index: 1;
+  }
+
+  .om-mig-text {
+    margin: 0 0 0 -1rem;
+    padding-left: 2.5rem;
+  }
+
+  .redigerade-bilder {
+    margin-inline: auto;
+    padding: 1rem 5rem 5rem;
+  }
+
+  .redigerade-bilder.bildjamforelse {
+    max-width: 56rem;
+  }
+}
+
+/* SMALA SKÄRMAR */
+
+@media screen and (max-width: 36rem) {
+  .redigerade-bilder > div {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .redigerade-bilder > .startsida-galleri {
+    gap: 0.5rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .svamp-logo {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .om-mig-container > h1 {
+    position: relative;
+    top: -2rem;
+  }
+
+  .om-mig-image {
+    left: -1rem;
+  }
+
+  .om-mig-sparkles {
+    left: 1rem;
+  }
+
+  .redigerade-bilder > .sparkles-corner {
+    left: -2.3rem;
+  }
+
+  .redigerade-bilder > .sparkles-corner-2 {
+    right: -2.3rem;
+  }
+}
