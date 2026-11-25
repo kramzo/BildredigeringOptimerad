@@ -47,8 +47,22 @@
 
     <main>
       <article class="redigerade-bilder bildjamforelse">
-        
-        <img class="sparkles-corner" src="images/sparkles-corner.png" alt="" />
+        <picture>
+          <source
+            srcset="
+              bilder-WebP/sparkles/sparkles-corner-96w.webp  96w,
+              bilder-Webp/sparkles/sparkles-corner-192.webp 192w,
+              bilder-Webp/sparkles/sparkles-corner-288.webp 288w
+            "
+            sizes="96px"
+          />
+
+          <img
+            class="sparkles-corner"
+            src="images/sparkles-corner.png"
+            alt=""
+          />
+        </picture>
 
         <h1>Original och redigerade bilder</h1>
         <p>
@@ -73,10 +87,11 @@
             <img
               src="images/bildserie001-edited.jpg"
               alt="Redigerad bild med blå blommor framför en bergsdal"
-                 sizes="(min-width: 384px) 320px, 100vw"
-              alt="Porträtt av Kei"
-               width="600"
+              sizes="(min-width: 384px) 320px, 100vw"
+              alt="Blommor på kulle med berg i bakgrunden"
+              width="600"
               height="1096"
+              fetchpriority="high"
             />
           </picture>
 
@@ -197,11 +212,22 @@
           </p>
         </div>
 
-        <img
-          class="sparkles-corner-2"
-          src="images/sparkles-corner.png"
-          alt=""
-        />
+        <picture>
+          <source
+            srcset="
+              bilder-WebP/sparkles/sparkles-corner-96w.webp  96w,
+              bilder-Webp/sparkles/sparkles-corner-192.webp 192w,
+              bilder-Webp/sparkles/sparkles-corner-288.webp 288w
+            "
+            sizes="96px"
+          />
+
+          <img
+            class="sparkles-corner-2"
+            src="images/sparkles-corner.png"
+            alt=""
+          />
+        </picture>
       </article>
     </main>
 

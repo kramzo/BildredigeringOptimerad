@@ -187,22 +187,24 @@ p {
 
 /* HÖRNSTJÄRNOR */
 
-.redigerade-bilder > .sparkles-corner,
-.redigerade-bilder > .sparkles-corner-2 {
+/* HÖRNSTJÄRNOR */
+
+.redigerade-bilder .sparkles-corner,
+.redigerade-bilder .sparkles-corner-2 {
   position: absolute;
   width: 6rem;
   height: auto;
   pointer-events: none;
 }
 
-.redigerade-bilder > .sparkles-corner {
+.redigerade-bilder .sparkles-corner {
   top: -2.5rem;
   left: -2.3rem;
 }
 
-.redigerade-bilder > .sparkles-corner-2 {
+.redigerade-bilder .sparkles-corner-2 {
   bottom: -2.5rem;
-  right: -2.3em;
+  right: -2.3rem;
   transform: rotate(180deg);
 }
 
@@ -294,4 +296,10 @@ p {
   .redigerade-bilder > .sparkles-corner-2 {
     right: -2.3rem;
   }
+}
+
+.om-mig-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }

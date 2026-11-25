@@ -45,7 +45,22 @@
 
     <main>
       <div class="redigerade-bilder">
-        <img class="sparkles-corner" src="images/sparkles-corner.png" alt="" />
+        <picture>
+          <source
+            srcset="
+              bilder-WebP/sparkles/sparkles-corner-96w.webp  96w,
+              bilder-Webp/sparkles/sparkles-corner-192.webp 192w,
+              bilder-Webp/sparkles/sparkles-corner-288.webp 288w
+            "
+            sizes="96px"
+          />
+
+          <img
+            class="sparkles-corner"
+            src="images/sparkles-corner.png"
+            alt=""
+          />
+        </picture>
 
         <h1>De redigerade bilderna</h1>
 
@@ -106,12 +121,22 @@
             />
           </picture>
         </div>
+        <picture>
+          <source
+            srcset="
+              bilder-WebP/sparkles/sparkles-corner-96w.webp  96w,
+              bilder-Webp/sparkles/sparkles-corner-192.webp 192w,
+              bilder-Webp/sparkles/sparkles-corner-288.webp 288w
+            "
+            sizes="96px"
+          />
 
-        <img
-          class="sparkles-corner-2"
-          src="images/sparkles-corner.png"
-          alt=""
-        />
+          <img
+            class="sparkles-corner-2"
+            src="images/sparkles-corner.png"
+            alt=""
+          />
+        </picture>
       </div>
     </main>
 
