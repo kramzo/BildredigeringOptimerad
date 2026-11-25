@@ -185,24 +185,27 @@ p {
   height: auto;
 }
 
-/* HÖRNSTJÄRNOR */
 
 /* HÖRNSTJÄRNOR */
-
-.redigerade-bilder .sparkles-corner,
-.redigerade-bilder .sparkles-corner-2 {
+.redigerade-bilder > .horn-dekoration {
   position: absolute;
   width: 6rem;
-  height: auto;
   pointer-events: none;
+  z-index: 1;
 }
 
-.redigerade-bilder .sparkles-corner {
+.redigerade-bilder > .horn-dekoration > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.redigerade-bilder > .horn-uppe {
   top: -2.5rem;
   left: -2.3rem;
 }
 
-.redigerade-bilder .sparkles-corner-2 {
+.redigerade-bilder > .horn-nere {
   bottom: -2.5rem;
   right: -2.3rem;
   transform: rotate(180deg);
@@ -288,18 +291,4 @@ p {
   .om-mig-sparkles {
     left: 1rem;
   }
-
-  .redigerade-bilder > .sparkles-corner {
-    left: -2.3rem;
-  }
-
-  .redigerade-bilder > .sparkles-corner-2 {
-    right: -2.3rem;
-  }
-}
-
-.om-mig-image {
-  display: block;
-  width: 100%;
-  height: auto;
 }
