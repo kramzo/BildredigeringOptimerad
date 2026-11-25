@@ -82,14 +82,13 @@ footer {
 
 /* OM MIG */
 
-.om-mig-portratt > picture > img {
+.om-mig-portratt {
   position: relative;
   width: min(100%, 20rem);
   margin-inline: auto;
 }
 
-.om-mig-image > .om-mig-portratt > picture > img {
-  position: relative;
+.om-mig-image {
   display: block;
   width: 100%;
   height: auto;

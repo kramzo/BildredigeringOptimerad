@@ -24,7 +24,13 @@
             type="image/webp"
           />
 
-          <img class="header-image" src="images/header.png" alt="" />
+          <img
+            class="header-image"
+            src="images/header.png"
+            alt=""
+            fetchpriority="high"
+            sizes="100vw"
+          />
         </picture>
       </div>
 
@@ -41,6 +47,7 @@
 
     <main>
       <article class="redigerade-bilder bildjamforelse">
+        
         <img class="sparkles-corner" src="images/sparkles-corner.png" alt="" />
 
         <h1>Original och redigerade bilder</h1>
@@ -66,15 +73,19 @@
             <img
               src="images/bildserie001-edited.jpg"
               alt="Redigerad bild med blå blommor framför en bergsdal"
+                 sizes="(min-width: 384px) 320px, 100vw"
+              alt="Porträtt av Kei"
+               width="600"
+              height="1096"
             />
           </picture>
 
           <picture>
             <source
               srcset="
-                bilder-Webp/bildserie001/bildserie001-edited-600w.webp   600w,
-                bilder-Webp/bildserie001/bildserie001-edited-1200w.webp 1200w,
-                bilder-Webp/bildserie001/bildserie001-edited-1800w.webp 1800w
+                bilder-Webp/bildserie001/bildserie001-600w.webp   600w,
+                bilder-Webp/bildserie001/bildserie001-1200w.webp 1200w,
+                bilder-Webp/bildserie001/bildserie001-1800w.webp 1800w
               "
               type="image/webp"
             />
@@ -98,7 +109,20 @@
 
         <div class="bild-grupp-2">
           <h2>Bild 2</h2>
-
+          <picture>
+            <source
+              srcset="
+                bilder-Webp/bildserie017/bildserie017-edited-600w.webp   600w,
+                bilder-Webp/bildserie017/bildserie017-edited-1200w.webp 1200w,
+                bilder-Webp/bildserie017/bildserie017-edited-1800w.webp 1800w
+              "
+              type="image/webp"
+            />
+            <img
+              src="images/bildserie017-edited.jpg"
+              alt="Våta klippor och träd vid ett vattenfall i dimma"
+            />
+          </picture>
           <picture>
             <source
               srcset="
@@ -114,20 +138,6 @@
             />
           </picture>
 
-          <picture>
-            <source
-              srcset="
-                bilder-Webp/bildserie017/bildserie017-edited-600w.webp   600w,
-                bilder-Webp/bildserie017/bildserie017-edited-1200w.webp 1200w,
-                bilder-Webp/bildserie017/bildserie017-edited-1800w.webp 1800w
-              "
-              type="image/webp"
-            />
-            <img
-              src="images/bildserie017-edited.jpg"
-              alt="Våta klippor och träd vid ett vattenfall i dimma"
-            />
-          </picture>
           <p>
             Jag tog bort personen vid vattenfallet och retuscherade området så
             att det smälte in i omgivningen. Jag tonade också ned artefakter i
@@ -153,6 +163,7 @@
             />
             <img
               src="images/bildserie004-edited.jpg"
+              loading="lazy"
               alt="Redigerad bild av sjöar och berg i svala, dämpade toner"
             />
           </picture>
@@ -168,6 +179,7 @@
             />
             <img
               src="images/bildserie004.jpg"
+              loading="lazy"
               alt="Originalbild av sjöar mellan berg under en molnig himmel"
             />
           </picture>
